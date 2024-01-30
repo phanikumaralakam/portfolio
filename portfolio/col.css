@@ -1,0 +1,675 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+/* Add these styles in your CSS file */
+
+
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: red;
+}
+::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(circle, #ff0000, #ff9900, #33cc33, #3399ff, #cc33ff);
+/* navbar styling */
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background: radial-gradient(circle, #ff0000, #ff9900, #33cc33, #3399ff, #cc33ff);
+
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav.sticky{
+  background: linear-gradient(to right, #ff0000, #ff9900, #33cc33, #3399ff, #cc33ff);
+  padding: 13px 0;
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: chocolate;
+}
+nav.sticky .navbar .logo a{
+  background: linear-gradient(to right, #ff0000, #ff9900, #33cc33, #3399ff, #cc33ff);}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color:gold;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: rgb(61, 18, 25);
+}
+nav.sticky .menu a{
+  color: rgb(25, 19, 36);
+}
+nav.sticky .menu a:hover{
+  color: #0E2431;
+}
+
+.media-icons {
+  width: 10px;
+  height: 10px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.media-icons.instagram {
+  background-color: #bc2a8d;
+}
+
+.media-icons.gmail {
+  background-color: #d14836;
+}
+
+.media-icons.Linkedin {
+  background-color: #1877f2;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #4070f4;
+}
+nav.sticky .menu-btn{
+  color: #FFF;
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+
+/* home section styling */
+/* home section styling */
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url('Bimages/Compressed-Background-image.jpg'); /* Replace with the compressed image filename */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Consider removing or changing to "scroll" */
+  font-family: 'Ubuntu', sans-serif;
+  transform: translate3d(0, 0, 0); /* Enable hardware acceleration */
+}
+
+
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+/* Hello*/
+.home .text-one{
+  font-size: 25px;
+  color:#FF0000;
+}
+/*Name*/
+.home .text-two{
+  color:silver  ;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+/* CSE*/
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #FFA500 ;
+}
+.home .text-four{
+  font-size: 23px;
+  margin: 5px 0;
+color: springgreen;}
+.home .button{
+  margin: 14px 0;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background:whitesmoke;
+  background: conic-gradient(#ff0000, #ff9900, #33cc33, #3399ff, #cc33ff);
+    cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #4070f4;
+  background:whitesmoke;
+  background: conic-gradient(#ff0000, #ff9900, #33cc33, #3399ff, #cc33ff);
+  
+}
+
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+ section {
+  padding-top: 40px;
+}
+
+section.about {
+  background-image: url('Bimages/About.jpg'); /* Add the background image URL */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Set text color to white or a suitable color for better visibility */
+  padding: 80px 0; /* Adjust padding as needed */
+}
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section{
+  padding-top: 40px;
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background:whitesmoke;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+   background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: royalblue;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color: white;
+}
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  background: radial-gradient(circle, #ff0000, #ff9900, #33cc33, #3399ff, #cc33ff);
+
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  background: repeating-linear-gradient(to right, #ff0000, #ff0000 10px, #ff9900 10px, #ff9900 20px);
+}
+
+
+ /* My Skills CSS */
+ .skills {
+  background: url('Bimages/Compressed-skills.png') center/cover no-repeat; /* Add background image */
+  color: #fff; /* Adjust text color based on your background image */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.skills .content {
+  padding: 40px 0;
+}
+
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-details .text {
+  width: 50%;
+}
+
+.skills-details p {
+  color: #0E2431;
+  text-align: justify;
+}
+
+.skills .skills-details .experience {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.skills-details .experience .num {
+  color: #0E2431;
+  font-size: 80px;
+}
+
+.skills-details .experience .exp {
+  color: #0E2431;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+.skills-details .boxes {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-details .box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+  background-color: #f0f0f0; /* Default background color for individual skill */
+  
+}
+
+.skills-details .boxes .box:nth-child(1) {
+  background-color: #61dafb; /* HTML - Blue */
+}
+
+.skills-details .boxes .box:nth-child(2) {
+  background-color: #2965f1; /* CSS - Dark Blue */
+}
+
+.skills-details .boxes .box:nth-child(3) {
+  background-color: #f0db4f; /* JavaScript - Yellow */
+}
+
+.skills-details .boxes .box:nth-child(4) {
+  background-color: #4f5b93; /* PHP - Purple */
+}
+
+.skills-details .boxes .box:nth-child(5) {
+  background-color: #306998; /* Python - Dark Blue */
+}
+
+.skills-details .boxes .box:nth-child(6) {
+  background-color: #dd4b25; /* DBMS - Red */
+}
+
+.skills-details .boxes .box:nth-child(7) {
+  background-color: #306998; /* Data Structures & Algorithms - Dark Blue */
+}
+
+.skills-details .boxes .topic {
+  font-size: 20px;
+  color:black;
+}
+
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: crimson;
+}
+
+.skills-details .box:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-details .box {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+/* My Education CSS */
+
+.Education .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url('Bimages/Compressed-education.jpg'); /* Add your image URL here */
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.Education .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.Education .boxes .box:hover {
+  background: #4070f4;
+  color: #fff;
+}
+
+.Education .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon {
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.Education .boxes .box:hover .topic,
+.Education .boxes .box:hover p {
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+
+.Education .boxes .box:hover .topic,
+.Education .boxes .box:hover p {
+  color: #fff;
+}
+
+/* Contact Me CSS */
+.contact {
+  background-image: url('Bimages/Compressed-wapp.png'); /* Add the path to your background image */
+  background-size: 13%; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  color:black; /* Adjust text color for better readability on the background image */
+}
+
+.contact .content {
+  margin: 10%;
+  padding: 10%;
+}
+
+.contact .text {
+  width: 100%;
+  text-align: right;
+  margin: auto;
+}
+
+.contact .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #25D366; /* WhatsApp green color */
+  
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.contact .button button:hover {
+  border-color: #128C7E; /* WhatsApp darker green color */
+  background-color: #128C7E;
+}
+
+/* Add this CSS for WhatsApp logo styling */
+.whatsapp-logo {
+  width: 20px; /* Adjust the size as needed */
+  margin-right: 5px;
+}
+
+/* Footer CSS */
+footer{
+  background: #4070f4;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .Education .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #4070f4;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .Education .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #4070f4;
+  }
+
+}
+
+
